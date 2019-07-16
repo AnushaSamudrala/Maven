@@ -1,0 +1,32 @@
+**Building an application in Maven**
+To build any application in Maven, the following steps to be followed:
+
+Step 1: The project must be taken into our github account by clicking on fork in github and copy the URL.
+Step 2: Now, create a folder in the local (i.e., in our system) and open gitbash in that folder and give a command:
+git clone (paste the UPL here) --> this command clones or downloads the project from git.
+Step 3: Now, to build the project, we need to install Maven, Java and Git.
+Step 4: Open the project folder and enter cmd on the path of the folder --> this enters the particular path.
+Step 5: Give the command: mvn clean install package --> this builds the application.
+Step 6: First it checks the .m2 folder, to see the dependencies.
+If the dependencies are not available, it goes to repo.maven.apache.org and starts downloading the dependencies from Maven central and 
+those dependencies will be stored in .m2 folder.
+Whenever an application is built, generates a target folder(.war file). This is deployed to multiple environments.
+Step 7: Once after the build is succeeded, a target folder and POM file will be generated. Then open the POM file using notepad++ and 
+check the Modules:
+It describes that the application must be built, next need to built the dependency order. i.e., the project must be built in a particular 
+order, otherwise build errors may occur.
+Then the .war file will be generated in the target folder in the web folder.
+Step 8: As Maven is a project Management tool, it means we can create a folder structure.
+A folder structure can be created as: 
+Create a folder --> enter into that folder --> enter cmd --> mvn archetype : generate (give the command to create a folder structure)
+There may be many folder structures and we need to give a particular folder structure to the development team.
+Even it asks for which project need to develop or create a folder structure.
+Example: Give 110 folder structure, it starts downloading the dependencies. Then it asks for:
+* group Id(Company name)--> e.g: com.Amazon.com
+* artifact Id(Project name) --> e.g: Facebook
+*Package(refer to group Id) --> e.g: asks if the details are right? (i.e., asks versions)
+This successfully creates the folder structure.
+
+
+
+
