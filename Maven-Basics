@@ -1,0 +1,21 @@
+Maven is a build tool and project management tool.
+By using Maven we can create the folder structures and executable file (i.e., .war file).
+We can deploy these .war files into multiple environments like Dev, QA and UAT.
+To do this, we need to launch a server in Google cloud platform.
+Maven is used for building and deploying applications.
+For this, Maven requries Java, Git and JDK.
+There are three types of repositories in Maven. 
+They are: 1. Central repository.
+          2. Local repository and
+          3. Remote repository.
+Whenever created a project in Maven, creates a .m2 folder automatically and stores all the dependencies. 
+The .m2 folder is present in local repository.
+Maven lifecycle stages:1. clean.
+                       2. Install.
+                       3. Package.
+                       4. Deploy.
+                       5. Verify.
+                       6. Compile.
+                       7. Test.
+
+          
